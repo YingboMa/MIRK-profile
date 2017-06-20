@@ -1,0 +1,13 @@
+julia> @benchmark sol = solve($bvp, $MIRK(4), dt=$dt)
+BenchmarkTools.Trial: 
+  memory estimate:  559.18 MiB
+  allocs estimate:  16097516
+  --------------
+  minimum time:     1.805 s (5.79% GC)
+  median time:      1.806 s (5.86% GC)
+  mean time:        1.820 s (5.92% GC)
+  maximum time:     1.850 s (6.11% GC)
+  --------------
+  samples:          3
+  evals/sample:     1
+
